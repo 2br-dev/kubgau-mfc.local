@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
+
+body {
+	font-family: "Wix Madefor Display", sans-serif;
+
+	& h1 {
+		font-size: clamp(40px, 3vw, 97px);
+	}
+
+	& h2 {
+		font-size: clamp(32px, 2.5vw, 64px);
+	}
+
+	& h3 {
+		font-size: clamp(26px, 2vw, 48px);
+	}
+
+	& h4 {
+		font-size: clamp(20px, 1.5vw, 32px);
+	}
+
+	& big {
+		font-size: clamp(18px, 1.5vw, 22px);
+	}
+
+	& small {
+		font-size: clamp(12px, 1vw, 14px);
+	}
+}

@@ -1,0 +1,111 @@
+body {
+	background-color: #fafafa;
+
+	& header {
+		position: sticky;
+		top: 0;
+		z-index: 2;
+		border: 1px solid green;
+		background-color: #fafafacc;
+		backdrop-filter: blur(10px);
+
+		& .header-wrapper {
+			border: 1px solid red;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			& nav {
+				& ul {
+					margin: 0;
+					display: flex;
+				}
+			}
+		}
+	}
+
+	& section {
+		border: 1px solid red;
+		padding: 4vmax 0;
+
+		&#hero {
+			display: flex;
+			align-items: center;
+			position: relative;
+			overflow: hidden;
+
+			&:before {
+				content: "";
+				position: absolute;
+				height: 70%;
+				aspect-ratio: 1.92 / 1;
+				top: 0;
+				right: 30vw;
+				background-image: url(/img/hero_left.svg);
+				background-size: cover;
+				z-index: -1;
+				opacity: 0;
+				transform: translateX(-200px);
+				animation: appearLeft 1s forwards;
+				animation-delay: 0.3s;
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				height: 50%;
+				aspect-ratio: 0.98 / 1;
+				left: 70vw;
+				bottom: 0;
+				background-image: url(/img/hero_right.svg);
+				background-size: cover;
+				z-index: -1;
+				opacity: 0;
+				transform: translateY(80px);
+				animation: appearRight 1s forwards;
+				animation-delay: 0.6s;
+			}
+
+			& .row {
+				margin: 10vmin 0;
+				opacity: 0;
+				transform: translateY(80px);
+				animation: appearBottom 1s forwards;
+				animation-delay: 1.2s;
+			}
+		}
+	}
+}
+
+@keyframes appearLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes appearRight {
+	from {
+		opacity: 0;
+		transform: translateX(200px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes appearBottom {
+	from {
+		opacity: 0;
+		transform: translateY(80px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

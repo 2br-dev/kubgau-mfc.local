@@ -1,0 +1,50 @@
+[
+	{
+		"photo": "sidak.jpg",
+		"name": "Сидак Юлия Владимировна",
+		"position": "Руководитель МФЦ",
+		"phones": [
+			{
+				"link": "tel:+78612215867",
+				"text": "8(861) 221-58-67"
+			}
+		],
+		"mail": "sidak.yu@kubsau.ru"
+	},
+	{
+		"photo": "kasatkina.jpg",
+		"name": "Касаткина Анна Сергеевна",
+		"position": "Специалист МФЦ",
+		"phones": [
+			{
+				"link": "tel:+78612215867",
+				"text": "8(861) 221-58-67"
+			}
+		],
+		"mail": "kasatkina.a@kubsau.ru"
+	},
+	{
+		"photo": "shtahova.jpg",
+		"name": "Штахова Лиана Витальевна",
+		"position": "Специалист МФЦ",
+		"phones": [
+			{
+				"link": "tel:+78612215867",
+				"text": "8(861) 221-58-67"
+			}
+		],
+		"mail": "mfc@kubsau.ru"
+	},
+	{
+		"photo": "knypa.jpg",
+		"name": "Кныпа Анна Михайловна",
+		"position": "Специалист МФЦ",
+		"phones": [
+			{
+				"link": "tel:+78612215867",
+				"text": "8(861) 221-58-67"
+			}
+		],
+		"mail": "mfc@kubsau.ru"
+	}
+]
