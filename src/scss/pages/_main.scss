@@ -1,6 +1,10 @@
 body {
 	background-color: #fafafa;
 
+	& strong {
+		font-weight: 500;
+	}
+
 	& a {
 		cursor: pointer;
 
@@ -171,7 +175,7 @@ body {
 			}
 
 			& h1 {
-				margin-bottom: 0.2em;
+				margin-bottom: 0rem;
 			}
 
 			& .row {
@@ -180,6 +184,11 @@ body {
 				transform: translateY(80px);
 				animation: appearBottom 1s forwards;
 				animation-delay: 1.2s;
+			}
+
+			& big {
+				display: block;
+				transform: translateY(15px);
 			}
 
 			& .feedback-dots {

@@ -6129,7 +6129,7 @@ body {
 }
 
 body h1 {
-    font-size: clamp(40px, 3vw, 97px);
+    font-size: clamp(40px, 5vw, 97px);
 }
 
 body h2 {
@@ -6154,6 +6154,10 @@ body small {
 
 body {
     background-color: #fafafa;
+}
+
+body strong {
+    font-weight: 500;
 }
 
 body a {
@@ -6327,7 +6331,7 @@ body section#hero:after {
 }
 
 body section#hero h1 {
-    margin-bottom: 0.2em;
+    margin-bottom: 0rem;
 }
 
 body section#hero .row {
@@ -6336,6 +6340,11 @@ body section#hero .row {
     transform: translateY(80px);
     animation: appearBottom 1s forwards;
     animation-delay: 1.2s;
+}
+
+body section#hero big {
+    display: block;
+    transform: translateY(15px);
 }
 
 body section#hero .feedback-dots {
