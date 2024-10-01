@@ -219,6 +219,16 @@ body {
 					}
 				}
 
+				& .swiper-slide {
+					opacity: 0 !important;
+					pointer-events: none;
+
+					&-active {
+						opacity: 1;
+						pointer-events: all;
+					}
+				}
+
 				& img {
 					display: block;
 					border-radius: 26px;

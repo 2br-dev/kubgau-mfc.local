@@ -1,9 +1,9 @@
 import * as M from "materialize-css";
 import Swiper from "swiper";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Pagination, Navigation, Autoplay, EffectFade } from "swiper/modules";
 import TinyMasonry from "./lib/tinyMasonry";
 
-Swiper.use([Navigation, Pagination, Autoplay]);
+Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
 let dotsSwiper: Swiper;
 
 (() => {
@@ -15,6 +15,10 @@ let dotsSwiper: Swiper;
 		allowTouchMove: false,
 		loop: true,
 		speed: 800,
+		effect: "fade",
+		fadeEffect: {
+			crossFade: true,
+		},
 		navigation: {
 			nextEl: ".next",
 			prevEl: ".prev",
