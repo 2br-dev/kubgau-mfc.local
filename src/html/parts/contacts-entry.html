@@ -1,15 +1,17 @@
 <div class="col l4 m6 s6 xs12">
 	<div class="contacts-block">
-		<img src="/img/@@photo" alt="" class="responsive-img" />
-		<div class="name">@@name</div>
-		<div>
-			<small>@@position</small>
-		</div>
-		@@for(let i=0; i<phones.length; i++){
-			<div>
-				<small><a href="`+phones[i].link+`">`+phones[i].text+`</a></small>
+		<img src="/mfc2024/img/@@photo" alt="" class="full-width" />
+		<div class="contacts-block__text">
+			<div class="name">@@name</div>
+			<div class="position">
+				<small>@@position</small>
 			</div>
-		}
-		<div><a><small class="copy-me"><span>@@mail</span></small> <i class="bx bx-copy"></i></a></div>
+			@@for(let i=0; i<phones.length; i++){
+				<div>
+					<small><a href="`+phones[i].link+`">`+phones[i].text+`</a></small>
+				</div>
+			}
+			<div><a><small class="copy-me"><span>@@mail</span></small> <i class="bx bx-copy"></i></a></div>
+		</div>
 	</div>
 </div>

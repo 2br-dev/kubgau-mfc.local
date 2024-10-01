@@ -6160,6 +6160,10 @@ body strong {
     font-weight: 500;
 }
 
+body .full-width {
+    width: 100%;
+}
+
 body a {
     cursor: pointer;
 }
@@ -6570,8 +6574,31 @@ body section#contacts img {
     }
 }
 
+body section#contacts .address-block {
+    margin-bottom: 20px;
+    line-height: 1.4em;
+}
+
 body section#contacts .contacts-block {
     margin-bottom: 40px;
+}
+
+body section#contacts .contacts-block .position {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) and (min-width: 350px) {
+    body section#contacts .contacts-block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    body section#contacts .contacts-block img {
+        width: 30%;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
 }
 
 body footer {

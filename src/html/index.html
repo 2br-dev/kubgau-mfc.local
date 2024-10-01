@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="/css/master.css" />
+		<link rel="stylesheet" href="/mfc2024/css/master.css" />
 	</head>
 	<body id="top">
 		<header>
@@ -12,7 +12,7 @@
 				<div class="header-wrapper">
 					<div class="link-wrapper">
 						<a href="https://kubsau.ru" class="logo">
-							<img src="/img/logo.svg" alt="" />
+							<img src="/mfc2024/img/logo.svg" alt="" />
 						</a>
 					</div>
 					<nav>
@@ -180,10 +180,16 @@
 						<div class="col xl8 offset-xl2 l10 offset-l1 m12">
 							<div class="rshb-banner">
 								<div class="img">
-									<img src="/img/bank_circles.png" alt="" />
+									<img
+										src="/mfc2024/img/bank_circles.png"
+										alt=""
+									/>
 								</div>
 								<div class="logo">
-									<img src="/img/bank_logo.svg" alt="" />
+									<img
+										src="/mfc2024/img/bank_logo.svg"
+										alt=""
+									/>
 								</div>
 								<div class="text">
 									Получите консультационные услуги, от
@@ -213,10 +219,10 @@
 								<div class="col">
 									<h2>Контакты</h2>
 								</div>
-								<div class="col xl3 l4 m6 s12">
+								<div class="col xl3 l3 m5 s12">
 									<img
-										src="/img/univercity.jpg"
-										class="responsive-img"
+										src="/mfc2024/img/univercity.jpg"
+										class="full-width"
 										alt=""
 									/>
 									<div class="address-block">
@@ -224,10 +230,10 @@
 											><i class="bx bxs-map-marker"></i
 											><span>Адрес</span></small
 										>
-										<p>
+										<div>
 											Главный учебно-административный
 											корпус КубГАУ, 2 этаж, кабинет 220
-										</p>
+										</div>
 									</div>
 									<div class="address-block">
 										<small
@@ -236,14 +242,12 @@
 											></i
 											><span>Телефоны</span></small
 										>
-										<ul>
-											<li>
-												<a href="tel:+78612215867"
-													>8(861) 221-58-67</a
-												>
-											</li>
-											<li>6-77 (внутренний)</li>
-										</ul>
+										<div>
+											<a href="tel:+78612215867"
+												>8(861) 221-58-67</a
+											>
+										</div>
+										<div>6-77 (внутренний)</div>
 									</div>
 									<div class="address-block">
 										<small
@@ -257,7 +261,9 @@
 										</a>
 									</div>
 								</div>
-								<div class="col xl8 offset-xl1 l8 m6 s12">
+								<div
+									class="col xl8 offset-xl1 offset-l1 offset-m1 l8 m6 s12"
+								>
 									<div class="row flex">
 										@@loop('./parts/contacts-entry.html',
 										'./data/contacts.json')
@@ -286,5 +292,5 @@
 		</footer>
 		<a href="#top" class="scroll-link fab"></a>
 	</body>
-	<script src="/js/master.js"></script>
+	<script src="/mfc2024/js/master.js"></script>
 </html>
