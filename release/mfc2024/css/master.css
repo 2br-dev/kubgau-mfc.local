@@ -6372,6 +6372,7 @@ body section#hero .feedback-dots .feedback-dot img {
     filter: grayscale(1);
     -o-object-fit: cover;
     object-fit: cover;
+    transition: filter 0.4s;
 }
 
 body section#hero .feedback-dots .feedback-dot.active img {

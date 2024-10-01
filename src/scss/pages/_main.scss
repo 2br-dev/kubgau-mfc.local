@@ -211,6 +211,7 @@ body {
 					img {
 						filter: grayscale(1);
 						object-fit: cover;
+						transition: filter 0.4s;
 					}
 
 					&.active img {
