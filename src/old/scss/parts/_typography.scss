@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
-@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
 
 body {
 	font-family: "Wix Madefor Display", sans-serif;
@@ -27,6 +26,4 @@ body {
 	& small {
 		font-size: clamp(12px, 1vw, 14px);
 	}
-
-	color: $text;
 }

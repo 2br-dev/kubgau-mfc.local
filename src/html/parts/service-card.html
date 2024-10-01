@@ -1,30 +1,38 @@
-<div class="service-card">
-	<div class="card-header">
-		<div class="card-name">@@name</div>
-		<div class="card-arrow"></div>
-	</div>
-	<div class="card-content">
-		<div class="card-block">
-			<small>Способ получения услуги</small>
-			<ul class="browser-default">
-				@@for(let i=0; i<achief_way.length; i++){ 
-					<li>` + achief_way[i] + `</li>
+<div class="service-card-wrapper">
+	<div class="service-block card">
+		<div class="card-header">
+			<div class="card-name">
+				<big><strong>@@name</strong></big>
+			</div>
+			<div class="card-arrow"></div>
+		</div>
+		<div class="card-content">
+			<div class="card-block">
+				<small>Способ получения услуги</small>
+				<ul class="browser-default">
+					@@for(let i=0; i<achief_way.length; i++){ 
+						<li>` + achief_way[i] + `</li>
+					}
+				</ul>
+				@@for(let i=0; i<docs2download.length; i++){
+					<a class="bttn" href="`+ docs2download[i].link +`"><span>`+ docs2download[i].name +`</span> <i class="bx bxs-download"></i></a>
 				}
-			</ul>
-			@@for(let i=0; i<docs2download.length; i++){
-				<a class="bttn" href="`+ docs2download[i].link +`">`+ docs2download[i].name +`</a>
-			}
-		</div>
-		<div class="card-block">
-			<small>Срок оказания услуги</small>
-			<p>
-				<i class="bx bxs-circle @@timing-indicator"></i><span>@@timing</span>
-			</p>
-		</div>
-		<div class="card-block">
-			<small>Документы для оказания услуги</small>
-			<p>@@required_docs</p>
-			<small>@@required_note</small>
+			</div>
+			<div class="card-block">
+				<small>Срок оказания услуги</small>
+				<p>
+					<i class="bx bxs-circle @@indicator"></i><span>@@timing</span>
+				</p>
+			</div>
+			<div class="card-block">
+				@@if(context.required_docs){
+					<small>Документы для оказания услуги</small>
+					<p>@@required_docs</p>
+				}
+				@@if(context.required_note){
+					<small>@@required_note</small>
+				}
+			</div>
 		</div>
 	</div>
 </div>

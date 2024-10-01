@@ -6,12 +6,12 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="/css/master.css" />
 	</head>
-	<body>
+	<body id="top">
 		<header>
 			<div class="container">
 				<div class="header-wrapper">
 					<div class="link-wrapper">
-						<a href="https://kubsau.ru">
+						<a href="https://kubsau.ru" class="logo">
 							<img src="/img/logo.svg" alt="" />
 						</a>
 					</div>
@@ -39,16 +39,36 @@
 							</li>
 						</ul>
 					</nav>
+					<div class="burger-wrapper">
+						<a
+							href="#"
+							data-target="mobile-menu"
+							class="sidenav-trigger"
+						>
+							<i class="bx bx-menu"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</header>
+		<ul class="sidenav" id="mobile-menu">
+			<li>
+				<a href="#services" class="scroll-link">Услуги</a>
+			</li>
+			<li>
+				<a href="#faq" class="scroll-link">Частые вопросы</a>
+			</li>
+			<li>
+				<a href="#contacts" class="scroll-link">Контакты</a>
+			</li>
+		</ul>
 		<main>
 			<section id="hero">
 				<div class="container">
 					<div class="row">
 						<div class="col xl8 l10 m12 offset-xl2 offset-l1">
 							<div class="row">
-								<div class="col"><h1>Просто и быстро</h1></div>
+								<div class="col"><h1>Просто и быстро</h1></div>
 								<div class="col l6 m12">
 									<p>
 										<big
@@ -59,20 +79,77 @@
 									</p>
 								</div>
 								<div class="col l6 m12">
-									<div class="feeedback-dots">
+									<div class="feedback-dots">
 										@@loop('./parts/feedback_dot.html',
 										'./data/feedback.json')
 									</div>
-									<div class="swiper" id="feedback-slider">
-										<div class="swiper-wrapper">
-											@@loop('./parts/feedback_slide.html',
-											'./data/feedback.json')
-										</div>
-										<div class="navigation">
-											<div class="current-from"></div>
-											<div class="arrow">
-												<div class="prev"></div>
-												<div class="next"></div>
+									<div class="tabs-container">
+										<div
+											class="swiper"
+											id="feedback-slider"
+										>
+											<div class="swiper-wrapper">
+												@@loop('./parts/feedback_slide.html',
+												'./data/feedback.json')
+											</div>
+											<div class="navigation">
+												<div class="current-from"></div>
+												<div class="arrows">
+													<a
+														href="javascript:void(0)"
+														class="prev"
+													>
+														<svg
+															viewBox="0 0 110 110"
+															xmlns="http://www.w3.org/2000/svg"
+														>
+															<circle
+																cx="55"
+																cy="55"
+																r="50"
+																fill="none"
+																stroke="#D3D3D3"
+															></circle>
+															<path
+																class="arrow"
+																d="M59 32 L39 55 L59 78"
+																fill="none"
+																stroke="#D3D3D3"
+															></path>
+														</svg>
+													</a>
+													<a
+														href="javascript:void(0)"
+														class="next"
+													>
+														<svg
+															viewBox="0 0 110 110"
+															xmlns="http://www.w3.org/2000/svg"
+														>
+															<circle
+																cx="55"
+																cy="55"
+																r="50"
+																fill="none"
+																stroke="#D3D3D3"
+															></circle>
+															<circle
+																id="slider-progress"
+																cx="55"
+																cy="55"
+																r="50"
+																fill="none"
+																stroke="#9DD800"
+															></circle>
+															<path
+																class="arrow"
+																d="M51 32 L71 55 L51 78"
+																fill="none"
+																stroke="#9DD800"
+															></path>
+														</svg>
+													</a>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -98,19 +175,19 @@
 			<section id="rshb">
 				<div class="container">
 					<div class="row">
-						<div class="col xl10 offset-xl1 l12">
+						<div class="col xl8 offset-xl2 l10 offset-l1 m12">
 							<div class="rshb-banner">
 								<div class="img">
-									<img src="/img/bank_circles.jpg" alt="" />
+									<img src="/img/bank_circles.png" alt="" />
 								</div>
 								<div class="logo">
 									<img src="/img/bank_logo.svg" alt="" />
 								</div>
-								<p>
+								<div class="text">
 									Получите консультационные услуги, от
 									сотрудника Россельхозбанка в МФЦ КубГАУ
 									каждые вторник и четверг с 13:00 до 15:00
-								</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -126,66 +203,70 @@
 					</div>
 				</div>
 			</section>
-		</main>
-		<section id="contacts">
-			<div class="container">
-				<div class="row">
-					<div class="col xl8 l10 m12 offset-xl2 offset-l1">
-						<div class="row">
-							<div class="col">
-								<h2>Контакты</h2>
-							</div>
-							<div class="col xl3 l4 m6 s12">
-								<img
-									src="/img/univercity.jpg"
-									class="responsive-img"
-									alt=""
-								/>
-								<div class="address-block">
-									<small
-										><i class="bx bxs-map-marker"></i
-										><span>Адрес</span></small
-									>
-									<p>
-										Главный учебно-административный корпус
-										КубГАУ, 2 этаж, кабинет 220
-									</p>
+			<section id="contacts">
+				<div class="container">
+					<div class="row">
+						<div class="col xl8 l10 m12 offset-xl2 offset-l1">
+							<div class="row">
+								<div class="col">
+									<h2>Контакты</h2>
 								</div>
-								<div class="address-block">
-									<small
-										><i
-											class="bx bxs-phone bx-split-horizontal"
-										></i
-										><span>Телефоны</span></small
-									>
-									<ul>
-										<li>
-											<a href="tel:+78612215867"
-												>8(861) 221-58-67</a
-											>
-										</li>
-										<li>6-77 (внутренний)</li>
-									</ul>
+								<div class="col xl3 l4 m6 s12">
+									<img
+										src="/img/univercity.jpg"
+										class="responsive-img"
+										alt=""
+									/>
+									<div class="address-block">
+										<small
+											><i class="bx bxs-map-marker"></i
+											><span>Адрес</span></small
+										>
+										<p>
+											Главный учебно-административный
+											корпус КубГАУ, 2 этаж, кабинет 220
+										</p>
+									</div>
+									<div class="address-block">
+										<small
+											><i
+												class="bx bxs-phone bx-split-horizontal"
+											></i
+											><span>Телефоны</span></small
+										>
+										<ul>
+											<li>
+												<a href="tel:+78612215867"
+													>8(861) 221-58-67</a
+												>
+											</li>
+											<li>6-77 (внутренний)</li>
+										</ul>
+									</div>
+									<div class="address-block">
+										<small
+											><i class="bx bxs-envelope"></i
+											><span>Почта</span></small
+										>
+										<br />
+										<a class="copy-me">
+											<span>mfc@kubsau.ru</span>
+											<i class="bx bx-copy"></i>
+										</a>
+									</div>
 								</div>
-								<div class="address-block">
-									<small
-										><i class="bx bxs-envelope"></i
-										><span>Почта</span></small
-									>
-									<p class="copy-me">mfc@kubsau.ru</p>
-								</div>
-							</div>
-							<div class="col xl8 offset-xl1 l8 m6 s12">
-								<div class="row flex">
-									@@loop('./parts/contacts-entry.html',
-									'./data/contacts.json')
+								<div class="col xl8 offset-xl1 l8 m6 s12">
+									<div class="row flex">
+										@@loop('./parts/contacts-entry.html',
+										'./data/contacts.json')
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</main>
 		<footer>
 			<div class="container">
 				<div class="row">
@@ -194,13 +275,14 @@
 					>
 						<p>
 							© 2013-2024 ФГБОУ ВО «Кубанский Государственный
-							Аграрный Университет имени И.Т. Трубилина» 350044,
-							Россия, г. Краснодар, ул. Калинина, 13
+							Аграрный Университет имени И.Т. Трубилина» 350044
 						</p>
+						<p>Россия, г. Краснодар, ул. Калинина, 13</p>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<a href="#top" class="scroll-link fab"></a>
 	</body>
 	<script src="/js/master.js"></script>
 </html>
