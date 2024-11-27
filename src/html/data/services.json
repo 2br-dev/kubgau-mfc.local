@@ -23,7 +23,7 @@
 		"docs2download": [
 			{
 				"name": "Скачать заявление",
-				"link": "/mfc2024/docs/заявление_на_выписку_из_приказа.pdf"
+				"link": "/mfc2024/docs/vypiska_iz_prikaza.pdf"
 			}
 		],
 		"required_docs": "Студенческий билет или Паспорт",
@@ -41,7 +41,7 @@
 		"docs2download": [
 			{
 				"name": "Скачать заявление",
-				"link": "/mfc2024/docs/заявление_на_справку_о_периоде_обученияоб_обучении.pdf"
+				"link": "/mfc2024/docs/spravka_period.pdf"
 			}
 		],
 		"required_docs": "Студенческий билет или Паспорт",
@@ -71,7 +71,7 @@
 		"docs2download": [
 			{
 				"name": "Скачать заявление",
-				"link": "/mfc2024/docs/заявление_на_дубликат_диплома_и_приложения_к_диплому.pdf"
+				"link": "/mfc2024/docs/dublikat_diploma.pdf"
 			}
 		],
 		"required_docs": "Студенческий билет или Паспорт",
@@ -89,7 +89,7 @@
 		"docs2download": [
 			{
 				"name": "Скачать заявление",
-				"link": "/mfc2024/docs/заявление_на_дубликат_диплома_и_приложения_к_диплому.pdf"
+				"link": "/mfc2024/docs/dublikat_diploma.pdf"
 			}
 		],
 		"required_docs": "Студенческий билет или Паспорт",
@@ -107,7 +107,7 @@
 		"docs2download": [
 			{
 				"name": "Скачать заявление",
-				"link": "/mfc2024/docs/заявление_на_дубликат_студенческого_билета_и_зачетной_книжки.pdf"
+				"link": "/mfc2024/docs/dublicat_stud_knizhki.pdf"
 			}
 		],
 		"required_docs": "Паспорт",
@@ -125,7 +125,7 @@
 		"docs2download": [
 			{
 				"name": "Скачать заявление",
-				"link": "/mfc2024/docs/заявление_на_дубликат_студенческого_билета_и_зачетной_книжки.pdf"
+				"link": "/mfc2024/docs/dublicat_stud_knizhki.pdf"
 			}
 		],
 		"required_docs": "Студенческий билет или Паспорт",
@@ -161,7 +161,7 @@
 		"docs2download": [
 			{
 				"name": "Скачать заявление",
-				"link": "/mfc2024/docs/заявление_на_справку_с_указанием_периодов_обучения_архивная.pdf"
+				"link": "/mfc2024/docs/spravka_archive.pdf"
 			}
 		],
 		"required_docs": "Паспорт",
@@ -191,7 +191,7 @@
 		"docs2download": [
 			{
 				"name": "Скачать заявление",
-				"link": "/mfc2024/docs/заявление_на_оригинал_документа_об_образовании_из_личного_дела.pdf"
+				"link": "/mfc2024/docs/original_documenta_obrazovanie.pdf"
 			}
 		],
 		"required_docs": "Студенческий билет или Паспорт",
