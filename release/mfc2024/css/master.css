@@ -6147,7 +6147,7 @@ body {
 }
 
 body h1 {
-    font-size: clamp(40px, 5vw, 97px);
+    font-size: clamp(40px, 12vw, 197px);
 }
 
 body h2 {
@@ -6191,7 +6191,7 @@ body a.bttn {
     line-height: 2em;
     padding: 0 1em;
     border-radius: 6px;
-    background-color: #9dd800;
+    background-color: #ff850b;
     color: #fff;
 }
 
@@ -6244,6 +6244,7 @@ body .card-header.active .card-arrow:before {
 }
 
 body header {
+    margin-top: 4vw;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -6323,37 +6324,19 @@ body section#hero {
 body section#hero:before {
     content: "";
     position: absolute;
-    height: 70%;
-    aspect-ratio: 1.92 / 1;
-    top: 0;
-    right: 30vw;
-    background-image: url(../img/hero_left.svg);
-    background-size: cover;
-    z-index: -1;
-    opacity: 0;
-    transform: translateX(-200px);
-    animation: appearLeft 1s forwards;
+    width: 70vw;
+    min-width: 400px;
+    aspect-ratio: 2 / 1;
+    top: 100px;
+    right: -100px;
+    background-image: url(../img/smile.svg);
+    background-size: contain;
+    animation: appearRight 1s forwards;
     animation-delay: 0.3s;
 }
 
-body section#hero:after {
-    content: "";
-    position: absolute;
-    height: 50%;
-    aspect-ratio: 0.98 / 1;
-    left: 70vw;
-    bottom: 0;
-    background-image: url(../img/hero_right.svg);
-    background-size: cover;
-    z-index: -1;
-    opacity: 0;
-    transform: translateY(80px);
-    animation: appearRight 1s forwards;
-    animation-delay: 0.6s;
-}
-
 body section#hero h1 {
-    margin-bottom: 0rem;
+    margin: 0;
 }
 
 body section#hero .row {
@@ -6484,7 +6467,7 @@ body section#services .masonry-wrapper .service-card-wrapper .service-block .car
 }
 
 body section#services .masonry-wrapper .service-card-wrapper .service-block .card-block i.fast {
-    color: #9dd800;
+    color: #ff850b;
 }
 
 body section#services .masonry-wrapper .service-card-wrapper .service-block .card-block i.med {

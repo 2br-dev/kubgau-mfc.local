@@ -12,7 +12,7 @@
 				<div class="header-wrapper">
 					<div class="link-wrapper">
 						<a href="https://kubsau.ru" class="logo">
-							<img src="/mfc2024/img/logo.svg" alt="" />
+							<img src="/mfc2024/img/logo_new.svg" alt="" />
 						</a>
 					</div>
 					<nav>
@@ -66,93 +66,83 @@
 			<section id="hero">
 				<div class="container">
 					<div class="row">
-						<div class="col xl8 l10 m12 offset-xl2 offset-l1">
-							<div class="row">
-								<div class="col">
-									<h1>Просто и быстро</h1>
-								</div>
-								<div class="col l5 m12">
-									<p>
-										<big
-											>Получить услугу в едином
-											Многофункциональном центре
-											КубГАУ</big
-										>
-									</p>
-								</div>
-								<div class="col l6 m12 offset-l6">
-									<div class="feedback-dots">
-										@@loop('./parts/feedback_dot.html',
+						<div class="col l8 m12">
+							<h1>Просто и быстро</h1>
+							<p>
+								<big
+									>получить услугу в едином
+									Многофункциональном центре КубГАУ</big
+								>
+							</p>
+						</div>
+						<div class="col l5 m12 offset-l7">
+							<div class="feedback-dots">
+								@@loop('./parts/feedback_dot.html',
+								'./data/feedback.json')
+							</div>
+							<div class="tabs-container">
+								<div class="swiper" id="feedback-slider">
+									<div class="swiper-wrapper">
+										@@loop('./parts/feedback_slide.html',
 										'./data/feedback.json')
 									</div>
-									<div class="tabs-container">
-										<div
-											class="swiper"
-											id="feedback-slider"
-										>
-											<div class="swiper-wrapper">
-												@@loop('./parts/feedback_slide.html',
-												'./data/feedback.json')
-											</div>
-											<div class="navigation">
-												<div class="current-from"></div>
-												<div class="arrows">
-													<a
-														href="javascript:void(0)"
-														class="prev"
-													>
-														<svg
-															viewBox="0 0 110 110"
-															xmlns="http://www.w3.org/2000/svg"
-														>
-															<circle
-																cx="55"
-																cy="55"
-																r="50"
-																fill="none"
-																stroke="#D3D3D3"
-															></circle>
-															<path
-																class="arrow"
-																d="M59 32 L39 55 L59 78"
-																fill="none"
-																stroke="#D3D3D3"
-															></path>
-														</svg>
-													</a>
-													<a
-														href="javascript:void(0)"
-														class="next"
-													>
-														<svg
-															viewBox="0 0 110 110"
-															xmlns="http://www.w3.org/2000/svg"
-														>
-															<circle
-																cx="55"
-																cy="55"
-																r="50"
-																fill="none"
-																stroke="#D3D3D3"
-															></circle>
-															<circle
-																id="slider-progress"
-																cx="55"
-																cy="55"
-																r="50"
-																fill="none"
-																stroke="#9DD800"
-															></circle>
-															<path
-																class="arrow"
-																d="M51 32 L71 55 L51 78"
-																fill="none"
-																stroke="#9DD800"
-															></path>
-														</svg>
-													</a>
-												</div>
-											</div>
+									<div class="navigation">
+										<div class="current-from"></div>
+										<div class="arrows">
+											<a
+												href="javascript:void(0)"
+												class="prev"
+											>
+												<svg
+													viewBox="0 0 110 110"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<circle
+														cx="55"
+														cy="55"
+														r="50"
+														fill="none"
+														stroke="#D3D3D3"
+													></circle>
+													<path
+														class="arrow"
+														d="M59 32 L39 55 L59 78"
+														fill="none"
+														stroke="#D3D3D3"
+													></path>
+												</svg>
+											</a>
+											<a
+												href="javascript:void(0)"
+												class="next"
+											>
+												<svg
+													viewBox="0 0 110 110"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<circle
+														cx="55"
+														cy="55"
+														r="50"
+														fill="none"
+														stroke="#D3D3D3"
+													></circle>
+													<circle
+														id="slider-progress"
+														cx="55"
+														cy="55"
+														r="50"
+														fill="none"
+														stroke="#ff850b"
+													></circle>
+													<path
+														class="arrow"
+														d="M51 32 L71 55 L51 78"
+														fill="none"
+														stroke="#ff850b"
+													></path>
+												</svg>
+											</a>
 										</div>
 									</div>
 								</div>
