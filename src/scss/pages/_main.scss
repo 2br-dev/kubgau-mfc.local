@@ -75,7 +75,7 @@ body {
 	}
 
 	& header {
-		margin-top: 4vw;
+		margin-top: 3vw;
 		position: sticky;
 		top: 0;
 		z-index: 2;
@@ -155,7 +155,7 @@ body {
 				width: 70vw;
 				min-width: 400px;
 				aspect-ratio: 2 / 1;
-				top: 100px;
+				top: 3vmax;
 				right: -100px;
 				background-image: url(/img/smile.svg);
 				background-size: contain;
@@ -292,7 +292,7 @@ body {
 								margin-right: 6px;
 
 								&.fast {
-									color: $accent;
+									color: #9DD800;
 								}
 
 								&.med {

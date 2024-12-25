@@ -24,7 +24,7 @@ let dotsSwiper: Swiper;
 			prevEl: ".prev",
 		},
 		autoplay: {
-			delay: 5000,
+			delay: 8000,
 		},
 		pagination: {
 			type: "fraction",

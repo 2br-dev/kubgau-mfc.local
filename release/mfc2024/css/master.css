@@ -6253,7 +6253,7 @@ body .card-header.active .card-arrow:before {
 }
 
 body header {
-    margin-top: 4vw;
+    margin-top: 3vw;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -6336,7 +6336,7 @@ body section#hero:before {
     width: 70vw;
     min-width: 400px;
     aspect-ratio: 2 / 1;
-    top: 100px;
+    top: 3vmax;
     right: -100px;
     background-image: url(../img/smile.svg);
     background-size: contain;
@@ -6477,7 +6477,7 @@ body section#services .masonry-wrapper .service-card-wrapper .service-block .car
 }
 
 body section#services .masonry-wrapper .service-card-wrapper .service-block .card-block i.fast {
-    color: #ff850b;
+    color: #9DD800;
 }
 
 body section#services .masonry-wrapper .service-card-wrapper .service-block .card-block i.med {
