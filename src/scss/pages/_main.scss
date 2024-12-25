@@ -197,6 +197,7 @@ body {
 						filter: grayscale(1);
 						object-fit: cover;
 						transition: filter 0.4s;
+						margin: clamp(4px, 1vw, 10px);
 					}
 
 					&.active img {

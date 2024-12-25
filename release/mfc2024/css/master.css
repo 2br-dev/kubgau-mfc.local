@@ -9,8 +9,6 @@
  *
  * Released on: September 12, 2024
  */
-@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
-
 @import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
 
 @font-face {
@@ -6141,8 +6139,19 @@ td, th {
     display: none;
 }
 
+@font-face {
+    font-family: 'TT Travels Text';
+  src: url("../fonts/TT_Travels_Text_Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'TT Travels Text';
+  src: url("../fonts/TT_Travels_Text_Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
 body {
-    font-family: "Wix Madefor Display", sans-serif;
+    font-family: "TT Travels Text", sans-serif;
     color: #222;
 }
 
@@ -6374,6 +6383,7 @@ body section#hero .feedback-dots .feedback-dot img {
     -o-object-fit: cover;
     object-fit: cover;
     transition: filter 0.4s;
+    margin: clamp(4px, 1vw, 10px);
 }
 
 body section#hero .feedback-dots .feedback-dot.active img {
