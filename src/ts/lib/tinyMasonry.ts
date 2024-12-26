@@ -57,17 +57,26 @@ class TinyMasonry {
 	}
 
 	updateBreakpoints() {
-		this.columnCount = this.defaultColumnCount;
-		if (this.breakPoints) {
-			this.breakPoints.forEach((point: IBreakpoint) => {
-				if (window.innerWidth < point.maxWidth) {
-					this.columnCount = point.columnCount;
-				}
-			});
+		let isMobile = this.isMobile();
+		if (isMobile) {
+			this.columnCount = 1;
+		}else{
+			this.columnCount = this.defaultColumnCount;
+			if (this.breakPoints) {
+				this.breakPoints.forEach((point: IBreakpoint) => {
+					if (window.innerWidth < point.maxWidth) {
+						this.columnCount = point.columnCount;
+					}
+				});
+			}
 		}
 
 		this.render();
 	}
+
+	isMobile() {
+		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+	  }
 
 	destroy() {
 		window.removeEventListener("resize", this.updateEvent, true);
