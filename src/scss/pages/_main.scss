@@ -192,12 +192,15 @@ body {
 
 				& .feedback-dot {
 					cursor: pointer;
+					width: 25%;
+					max-width: 90px;
 
 					img {
 						filter: grayscale(1);
 						object-fit: cover;
 						transition: filter 0.4s;
 						margin: clamp(4px, 1vw, 10px);
+						max-width: calc(100% - 10px);
 					}
 
 					&.active img {

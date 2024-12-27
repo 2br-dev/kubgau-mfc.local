@@ -6376,6 +6376,8 @@ body section#hero .feedback-dots {
 
 body section#hero .feedback-dots .feedback-dot {
     cursor: pointer;
+    width: 25%;
+    max-width: 90px;
 }
 
 body section#hero .feedback-dots .feedback-dot img {
@@ -6384,6 +6386,7 @@ body section#hero .feedback-dots .feedback-dot img {
     object-fit: cover;
     transition: filter 0.4s;
     margin: clamp(4px, 1vw, 10px);
+    max-width: calc(100% - 10px);
 }
 
 body section#hero .feedback-dots .feedback-dot.active img {
